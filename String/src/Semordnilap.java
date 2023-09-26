@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Semordnilap {
     public static void main(String[] args) {
@@ -8,12 +10,12 @@ public class Semordnilap {
         pair.add("desserts");
         pair.add("stressed");
         expected.add(pair);
-        ArrayList<ArrayList<String>> actual = semordnilap(input);
+        ArrayList<ArrayList<String>> actual = semordnilap2(input);
         System.out.println("expected: " + expected);
         System.out.println("actual: " + actual);
     }
 
-    public static ArrayList<ArrayList<String>> semordnilap(String[] words) {
+    public static ArrayList<ArrayList<String>> semordnilap1(String[] words) {
         ArrayList<ArrayList<String>> result = new ArrayList<>();
         for(int i = 0; i < words.length; i++) {
             ArrayList<String> pair = new ArrayList<>();
@@ -33,6 +35,23 @@ public class Semordnilap {
                     result.add(pair);
                     break;
                 }
+            }
+        }
+        return result;
+    }
+
+    public static ArrayList<ArrayList<String>> semordnilap2(String[] words) {
+        HashSet<String> set = new HashSet<>(Set.of(words));
+        ArrayList<ArrayList<String>> result = new ArrayList<>();
+        for(String word: words) {
+            String reverse = String.valueOf(new StringBuilder(word).reverse());
+            if(set.contains(reverse) && !word.equals(reverse)) {
+                ArrayList<String> pair = new ArrayList<>();
+                pair.add(word);
+                pair.add(reverse);
+                result.add(pair);
+                set.remove(word);
+                set.remove(reverse);
             }
         }
         return result;
