@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/AlgoExpert.iml" filepath="$PROJECT_DIR$/AlgoExpert.iml" />
       <module fileurl="file://$PROJECT_DIR$/Array/Array.iml" filepath="$PROJECT_DIR$/Array/Array.iml" />
       <module fileurl="file://$PROJECT_DIR$/GreedyAlgorithms/GreedyAlgorithms.iml" filepath="$PROJECT_DIR$/GreedyAlgorithms/GreedyAlgorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinkedLists/LinkedLists.iml" filepath="$PROJECT_DIR$/LinkedLists/LinkedLists.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursion/Recursion.iml" filepath="$PROJECT_DIR$/Recursion/Recursion.iml" />
       <module fileurl="file://$PROJECT_DIR$/Searching/Searching.iml" filepath="$PROJECT_DIR$/Searching/Searching.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sorting/Sorting.iml" filepath="$PROJECT_DIR$/Sorting/Sorting.iml" />
