@@ -15,11 +15,6 @@ public class NumberOfWaysToMakeChange {
         for(int denom: denoms) {
             for (int amount = 1; amount < n + 1; amount++) {
                 if (denom <= amount) {
-//                    System.out.println("denom: " + denom);
-//                    System.out.println("amount: " + amount);
-//                    System.out.println("ways[amount]: " + ways[amount]);
-//                    System.out.println("ways[amount - denom]: " + ways[amount - denom]);
-//                    System.out.println(Arrays.toString(ways));
                     ways[amount] += ways[amount - denom];
                 }
             }
