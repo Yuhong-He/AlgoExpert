@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class NumberOfWaysToMakeChange {
     public static void main(String[] args) {
         int[] input = {1, 5};
